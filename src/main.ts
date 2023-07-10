@@ -1,0 +1,1 @@
+// main entrance for my typescript.
