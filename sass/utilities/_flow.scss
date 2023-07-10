@@ -1,0 +1,7 @@
+.flow > *:where(:not(:first-child)) {
+  margin-block-start: var(--flow-spacer, 1rem);
+}
+
+// You can change the `--flow-spacer` value by adding `style` attribute on the HTML tag.
+// style="--flow-spacer: 2.5rem;"
+// then the `.flow` gap will change!
