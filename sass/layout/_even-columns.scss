@@ -1,0 +1,13 @@
+@use "../abstracts/" as *;
+
+.even-columns {
+  display: grid;
+  column-gap: var(--grid-column-gap, --grid-gap, $grid-default-gap);
+  row-gap: var(--grid-row-gap, --grid-gap, $grid-default-gap);
+
+  // this media query can be changed.
+  @include mq(medium) {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}

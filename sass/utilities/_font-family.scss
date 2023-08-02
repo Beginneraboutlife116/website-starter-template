@@ -1,0 +1,7 @@
+@use '../abstracts/' as *;
+
+.ff-base {
+  font-family: $ff-base;
+}
+
+// we could build ff-accent to change some accent text.

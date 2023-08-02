@@ -1,0 +1,9 @@
+@use "../abstracts" as *;
+
+.flex-group {
+  display: flex;
+  flex-wrap: wrap;
+  // the custom properties are more flexible.
+  column-gap: var(--flex-column-gap, --flex-gap, $flex-group-default-gap);
+  row-gap: var(--flex-row-gap, --flex-gap, $flex-group-default-gap);
+}
