@@ -3,8 +3,12 @@
 .flex-group {
   display: flex;
   flex-wrap: wrap;
-  // the custom properties are more flexible.
-  column-gap: var(--flex-column-gap, --flex-gap, $flex-group-default-gap);
-  row-gap: var(--flex-row-gap, --flex-gap, $flex-group-default-gap);
   width: fit-content;
+  // the custom properties are more flexible.
+  column-gap: var(--flex-column-gap, var(--flex-gap, $flex-group-default-gap));
+  row-gap: var(--flex-row-gap, var(--flex-gap, $flex-group-default-gap));
+
+  &.mx-auto {
+    justify-content: center;
+  }
 }

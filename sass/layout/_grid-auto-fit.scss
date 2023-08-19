@@ -2,8 +2,8 @@
 
 .grid-auto-fit {
   display: grid;
-  column-gap: var(--grid-column-gap, --grid-gap, $grid-default-gap);
-  row-gap: var(--grid-column-gap, --grid-gap, $grid-default-gap);
+  column-gap: var(--grid-column-gap, var(--grid-gap, $grid-default-gap));
+  row-gap: var(--grid-column-gap, var(--grid-gap, $grid-default-gap));
 
   // the min-width we could find in the layout, which may be the smallest component.
   grid-template-columns: repeat(

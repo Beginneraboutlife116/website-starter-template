@@ -1,4 +1,8 @@
 $ff-sans: "Open Sans", sans-serif;
+$ff-serif: "Open Sans", sans-serif;
+
+$ff-base: $ff-sans;
+$ff-accent: $ff-serif;
 
 $font-sizes: (
   900: 3.75rem,
@@ -8,7 +12,5 @@ $font-sizes: (
   400: 1.125rem
 );
 
-$fw-regular: 400;
-$fw-bold: 700;
-
-$ff-base: $ff-sans;
+$fw-400: 400;
+$fw-700: 700;

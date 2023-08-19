@@ -1,5 +1,7 @@
 @use "../abstracts" as *;
 
+// also, we could add any specific utilities in here, such as `.section` for different padding block.
+
 .mx-auto {
   margin-inline: auto;
 }
