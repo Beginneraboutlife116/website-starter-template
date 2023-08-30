@@ -3,6 +3,7 @@
 @use "sass:map";
 @use "breakpoints" as *;
 
+// mobile first design
 @mixin mq($size) {
   @if map.has-key($breakpoints, $size) {
     $breakpoint: map.get($breakpoints, $size);
