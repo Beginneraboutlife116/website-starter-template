@@ -13,6 +13,11 @@
 img,
 picture,
 svg {
-  display: block;
-  max-width: 100%;
+  max-inline-size: 100%;
+  block-size: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 0.75rem;
 }

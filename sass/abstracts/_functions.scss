@@ -11,7 +11,7 @@
   }
 }
 
-@function fs($font-size) {
+@function fz($font-size) {
   @if map.has-key($font-sizes, $font-size) {
     @return map.get($font-sizes, $font-size);
   } @else {
@@ -26,3 +26,12 @@
     @error '$sizes does not have that size!';
   }
 }
+
+@function rem($pixel) {
+  @if math.is-unitless($pixel) {
+    @return math.div($pixel, 16) * rem;
+  } @else {
+    @error 'Don\'t use units when using the rem() function; only number.';
+  }
+}
+
