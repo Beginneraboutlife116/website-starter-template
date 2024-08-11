@@ -1,8 +1,7 @@
 @use "sass:map";
-@use "functions" as *;
 
 // general sizes
-$size: rem(4);
+$size: 0.25rem;
 $sizes: (
   0: 0,
   1: $size * 1,
